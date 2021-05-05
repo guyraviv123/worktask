@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+<head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+
+<body>
+
+    <div> <label for="cars">סטטוס:</label> <br>
+
+        <select name="cars" id="ddlViewBy">
+  <option value="0">כל הסטטוסים</option>
+  <option value="1">נמכר!</option>
+  <option value="2">מאחר</option>
+  <option value="3">התקבל</option>
+  <option value="4">שיחה חוזרת</option>
+</select>
+    </div>
+
+    <div> <label for="cars">מקור הליד</label> <br>
+        <select name="cars">
+  <option value="volvo">כל המקורות</option>
+  <option value="saab">מקור 1</option>
+  <option value="mercedes">מקור 2</option>
+  <option value="audi">מקור 3</option>
+</select>
+
+    </div>
+    <div> <label for="cars">קבוצה</label> <br>
+        <select name="cars" id="cars2">
+  <option value="0">כל הקבוצות</option>
+  <option value="1">אשדוד</option>
+  <option value="2">חולון</option>
+  <option value="3">ראשון לציון</option>
+  <option value="4">נס ציונה</option>
+</select>
+
+    </div>
+    <div>
+        <label for="birthday">מתאריך</label> <br>
+        <input type="date" id="birthday" name="birthday">
+    </div>
+    <div>
+        <label for="birthday">לתאריך</label> <br>
+        <input type="date" id="birthday1" name="birthday">
+    </div>
+    <div>
+        <button type="button" onclick="changeText()">הצג</button>
+
+    </div>
+
+    <p id="test" style="color:red;">
+
+    </p>
+
+    <table>
+        <thead>
+            <tr>
+                <th class="right">סטטוס </th>
+                <th>תאריך קבלה </th>
+                <th>שם מלא</th>
+                <th>טלפון</th>
+                <th>קבוצה מטפלת </th>
+                <th class="left"> הופנה על ידי</th>
+            </tr>
+        </thead>
+        <tbody id="bodyId">
+
+        </tbody>
+    </table>
+    <script src="script/newjavascript.js" type="text/javascript"></script>
+</body>
+
+</html>
