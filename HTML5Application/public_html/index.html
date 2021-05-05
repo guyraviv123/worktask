@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+<head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+
+
+</head>
+
+<body>
+
+    <div> <label>סטטוס:</label> <br>
+
+        <select id="status">
+  <option value="0">כל הסטטוסים</option>
+  <option value="1">נמכר!</option>
+  <option value="2">מאחר</option>
+  <option value="3">התקבל</option>
+  <option value="4">שיחה חוזרת</option>
+</select>
+    </div>
+
+    <div> <label>מקור הליד</label> <br>
+        <select>
+  <option value="0">כל המקורות</option>
+  <option value="1">מקור 1</option>
+  <option value="2">מקור 2</option>
+  <option value="3">מקור 3</option>
+</select>
+
+    </div>
+    <div> <label>קבוצה</label> <br>
+        <select id="city">
+  <option value="0">כל הקבוצות</option>
+  <option value="1">אשדוד</option>
+  <option value="2">חולון</option>
+  <option value="3">ראשון לציון</option>
+  <option value="4">נס ציונה</option>
+</select>
+
+    </div>
+    <div>
+        <label>מתאריך</label> <br>
+        <input type="date">
+    </div>
+    <div>
+        <label>לתאריך</label> <br>
+        <input type="date">
+    </div>
+    <div>
+        <button type="button" onclick="filter()">הצג</button>
+
+    </div>
+
+    <p id="comment" style="color:red;">
+
+    </p>
+
+    <table>
+        <thead>
+            <tr>
+                <th class="right">סטטוס </th>
+                <th>תאריך קבלה </th>
+                <th>שם מלא</th>
+                <th>טלפון</th>
+                <th>קבוצה מטפלת </th>
+                <th class="left"> הופנה על ידי</th>
+            </tr>
+        </thead>
+        <tbody id="bodyId">
+
+        </tbody>
+    </table>
+    <script src="script/newjavascript.js" type="text/javascript"></script>
+</body>
+
+</html>
